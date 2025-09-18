@@ -1,0 +1,39 @@
+---
+title: "data_manipulation"
+author: "Mungyu Kwok"
+date: "2025-09-18"
+output: github_document
+---
+
+```{r}
+library(tidyverse)
+```
+ 
+Let's import the datasets
+
+```{r}
+litters_df = 
+  read_csv("data_import_examples/FAS_litters.csv", na = c("NA",".",""))
+litters_df = 
+  janitor::clean_names(litters_df)
+
+pups_df = 
+  read_csv("data_import_examples/FAS_pups.csv", na = c("NA",".",""))
+pups_df = 
+  janitor::clean_names(pups_df)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
